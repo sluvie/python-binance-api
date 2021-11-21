@@ -21,5 +21,11 @@ from src import *
 # print(data)
 
 # get balances
-balances = binance_api.balances()
-print(balances)
+# balances = binance_api.balances()
+# print(balances)
+
+# order
+# response = binance_api.order("SOLUSDT", binance_api.BUY, 0.001, binance_api.LIMIT, binance_api.GTC, True)
+
+# order status
+response = binance_api.orderStatus("SOLUSDT")
